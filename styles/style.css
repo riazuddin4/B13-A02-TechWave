@@ -13,6 +13,9 @@ body{
 nav{
     max-width: 1600px;
 }
+.max-v{
+    max-width: 1600px;
+}
 
 .container{
     display: flex;
@@ -39,9 +42,10 @@ nav{
 .logo{
     font-size: 4rem;
     padding: 20px;
+    font-weight: bold;
 }
 .wave{
-    background: linear-gradient(90deg, #ff2db2, #8a2be2);
+    background: linear-gradient(4deg, #ff2db2, #8a2be2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -50,4 +54,136 @@ nav{
     gap: 32px;
     line-height: 120%;
     font-size: 1rem;
+}
+
+/* banner design */
+
+.banner{
+    background-image: url(../assets/hero-bg.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 100vh; */
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.banner-bg-image{
+    position: absolute;
+    width: 360px;
+    height: 350px;
+    margin: -195px -162px;
+}
+.banner-font-image{
+    position: absolute;
+    width: 116px;
+    height: 175px;
+    margin: -100px -44px;
+}
+.new-badge{
+    position: absolute;
+    background-color: #00FF88;
+    right: 467px;
+    top: 200px;
+    color: black;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.title{
+    margin-top: 200px;
+}
+
+.subtitle{
+    margin-top: 20px;
+}
+
+
+#about, #TechWave{
+    max-width: 1600px;
+}
+.about-container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    border: 2px solid aqua;
+}
+.about-container-title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.about-container-subtitle{
+    font-size: 1rem;
+    line-height: 30px;
+    margin-bottom: 160px;
+
+}
+.box-container{
+    width: 1200px;
+    border: 2px solid aqua;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 120px;
+
+}
+.box-item>h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+}
+
+
+.techwave{
+    width: 1200px;
+    margin: 0 auto;
+     border: 2px solid aqua;
+}
+
+.TechWave-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+.TechWave-box{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.card {
+  background: #2a0d45;
+  border-radius: 16px;
+  padding: 25px;
+}
+.card h1 {
+  margin: 15px 0 10px;
+  font-size: 1rem;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+.card.tall {
+  grid-row: span 2;
+}
+.card.wide {
+  grid-column: span 2;
 }
