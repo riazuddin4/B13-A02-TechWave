@@ -323,10 +323,6 @@ nav{
 
 }
 
-
-
-
-
 .footer-socials{
     display: inline-flex;
     align-items: center;
@@ -357,5 +353,12 @@ nav{
     opacity: 0.5;
  }
 
+.display-hide{
+    display: none;
+}
 
+
+@media screen and (max-width:576px) {
+    
+}
  
